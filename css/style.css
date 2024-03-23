@@ -1,49 +1,32 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
+body, h1, p {
+    font-family: 'Open Sans', sans;
+    color: black;
+    background-color: lightgrey;
 }
 
-h2 {
-    text-align: center;
+.container{
+    display: grid;
+    grid-template-areas: "header header" 
+    "content content" 
+    "footer footer";
+
 }
 
-input[type="number"] {
-    width: 45%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-#resultado {
-    margin-top: 20px;
-    text-align: center;
-}
+.header{
+    grid-area: header;
+  }
+  .content{
+    grid-area: content;
+  }
+  .footer{
+    grid-area: footer;
+  }
+  
+  
