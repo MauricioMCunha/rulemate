@@ -1,0 +1,30 @@
+@media only screen and (max-width: 768px) {
+    .inputBox {
+        width: 90%;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    header {
+        font-size: 20px;
+    }
+  
+    header h4 {
+        font-size: 14px;
+    }
+  
+    .inputBox {
+        width: 100%;
+    }
+  
+    .btn {
+        padding: 12px 30px;
+        font-size: 14px;
+        width: 100%;
+    }
+  
+    .btn::before{
+      opacity: 1;
+    }
+  }
+  
