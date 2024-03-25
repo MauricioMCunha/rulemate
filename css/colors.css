@@ -1,6 +1,6 @@
 :root {
 
-    --background-body: #2a3d5f;
+    --background-body: #1e0731;
     --color-text-all: blueviolet;
 
     /* CORES PARA  btn BOTAO DE CALCULAR */
@@ -35,12 +35,18 @@
 
 
     /* COR PARA O HEADER */
-    --cor-header-h4: #00dfc4;
-    /* sutitulo h4 */
+    --cor-header-h4: #00dfc4; /* subtitulo h4 */
 
     /* COR PARA FUNDO MODAL */
-
     --corfundoModal: rgba(0, 0, 0, 0.9);
     --corfontModal: rgb(81, 18, 122);
 
+    /* COR PARA INPUTS */
+    --cor-inputBox-border: rgba(255, 255, 255, 0.25); 
+    --cor-background-inputBox: #1d2b3a;
+    --cor-text-inputBox: #f1f1f1;
+    --cor-span-inputBox: rgba(255, 255, 255, 0.25);
+    --cor-focus-inputBox: #00dfc4;
+    --cor-background-inputBoxChild-focusSpan: #00dfc4;
+    --cor-text-inputBoxChild-focusSpan: #1d2b3a; 
 }

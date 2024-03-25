@@ -29,12 +29,12 @@ btn.addEventListener('click', (event) => {
     if (checkado) {
 
       const divResult = getElements('#resultado');
-      const resultado = (A * B) / C;
+      const resultado = (B * C) / A;
       divResult.innerText = resultado.toFixed(2);
      
     } else {
       const divResult = getElements('#resultado');
-      const resultado = (B * C) / A;
+      const resultado = (A * B) / C;
       divResult.innerText = resultado.toFixed(2);
     }
   });
