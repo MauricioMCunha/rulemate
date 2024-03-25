@@ -1,8 +1,10 @@
+@import url(colors.css);
+
 .btn {
     padding: 15px 40px;
     border: none;
     outline: none;
-    color: #f1f1f1;
+    color: var(--color-text-btn);
     cursor: pointer;
     position: relative;
     z-index: 0;
@@ -20,13 +22,13 @@
 .btn::after {
     width: 100%;
     height: 100%;
-    background: #333;
+    background: var(--cor-background-btnAfter);
     left: 0;
     top: 0;
 }
 
 .btn::before {
-    background: linear-gradient(45deg, #7bece7, #5f72dc, #bb3cbb, #a53170, #782135, #e4faff, #adacd1, #beb2d5);
+    background: var(--cor-background-btnBefore);
     top: -2px;
     left: -2px;
     background-size: 600%;
@@ -44,10 +46,10 @@
 
 .btn:active::after
 {
-  background: transparent;
+  background: var(--btn-active-after);
 }
 .btn:active{
-  color: #782135;
+  color: var(--cor-background-btnActive);
   font-weight: bold;
 }
 @keyframes glowing

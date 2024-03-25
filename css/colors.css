@@ -1,0 +1,46 @@
+:root {
+
+    --background-body: #2a3d5f;
+    --color-text-all: blueviolet;
+
+    /* CORES PARA  btn BOTAO DE CALCULAR */
+    --color-text-btn: #f1f1f1;
+    /* cor do btn */
+    --cor-background-btnAfter: #333;
+    /* cor btn:after */
+    /* backgroud btn::before */
+    --cor-background-btnBefore: linear-gradient(45deg,
+            #7bece7,
+            #5f72dc,
+            #bb3cbb,
+            #a53170,
+            #782135,
+            #e4faff,
+            #adacd1,
+            #beb2d5);
+    --cor-background-btnActive: #782135;
+    /* btn:active */
+    --btn-active-after: transparent;
+    /* btn:active:after */
+
+    /* Cores para Checkbox*/
+    --color-active: #275EFE;
+    --color-active-inner: #fff;
+    --color-focus: 2px rgba(39, 94, 254, .3);
+    --color-border: #BBC1E1;
+    --color-border-hover: #275EFE;
+    --color-background: #fff;
+    --color-disabled: #F6F8FF;
+    --color-disabled-inner: #E1E6F9;
+
+
+    /* COR PARA O HEADER */
+    --cor-header-h4: #00dfc4;
+    /* sutitulo h4 */
+
+    /* COR PARA FUNDO MODAL */
+
+    --corfundoModal: rgba(0, 0, 0, 0.9);
+    --corfontModal: rgb(81, 18, 122);
+
+}

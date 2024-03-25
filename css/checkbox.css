@@ -1,6 +1,8 @@
 /* Autor: Mauricio Cunha
    Aplicação: RuleMate @2024
 */
+
+@import url(colors.css);
 .checkbox-wrapper-14 * {
     box-sizing: inherit;
   }
@@ -13,15 +15,7 @@
   /* Estilos para checkboxes */
   @supports (-webkit-appearance: none) or (-moz-appearance: none) {
     .checkbox-wrapper-14 input[type=checkbox] {
-      --color-active: #275EFE;
-      --color-active-inner: #fff;
-      --color-focus: 2px rgba(39, 94, 254, .3);
-      --color-border: #BBC1E1;
-      --color-border-hover: #275EFE;
-      --color-background: #fff;
-      --color-disabled: #F6F8FF;
-      --color-disabled-inner: #E1E6F9;
-  
+      
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
