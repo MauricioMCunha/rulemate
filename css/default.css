@@ -12,6 +12,8 @@ body {
     min-height: 100vh;
     flex-direction: column;
     gap: 30px;
-    background: #1d2b3a;
+
+    background: #2a3d5f;
+    
     color: blueviolet;
 }

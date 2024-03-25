@@ -1,19 +1,44 @@
-function calcularRegraDeTres() {
-    
-    // Obter os valores dos campos de entrada
-    const valeProva = document.getElementById("valeProva").value;
-    const questoesTem = document.getElementById("questoesTem").value;
-    const acertosProva = document.getElementById("acertosProva").value;
+const getElements = (...queries) => document.querySelector(...queries);
+
+
+
+const btn = getElements('.btn');
+const modal = getElements('dialog');
+
+
+
+btn.addEventListener('click', (event) => { 
+
+
+  modal.showModal();
+
+  const A = getElements('#valor1').value;
+  const B = getElements('#valor2').value;
+  const C = getElements('#valor3').value;
+
+
+  const checkado = getElements('#s1-14').checked;
+
 
     // Verificar se os valores são válidos
-    if (isNaN(valeProva) || isNaN(questoesTem) || isNaN(acertosProva)) {
-        alert("Por favor, insira valores válidos.");
-        return;
+    if (isNaN(A) || isNaN(B) || isNaN(C)) {
+      alert("Por favor, insira valores válidos.");
+      return;
     }
+    
+    if (checkado) {
 
-    // Calcular o valor desconhecido
-    const resultado = ( acertosProva * valeProva) / questoesTem;
+      const divResult = getElements('#resultado');
+      const resultado = (A * B) / C;
+      divResult.innerText = resultado.toFixed(2);
+     
+    } else {
+      const divResult = getElements('#resultado');
+      const resultado = (B * C) / A;
+      divResult.innerText = resultado.toFixed(2);
+    }
+  });
 
-    // Exibir o resultado na página
-    document.getElementById("resultado").innerText = "Sua nota é: " + resultado;
-}
+modal.addEventListener('click', ()=>{
+  window.location.reload()
+})
