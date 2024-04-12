@@ -1,0 +1,76 @@
+.animeTitle{
+    animation: titleAnime 2s linear 0s 1 alternate forwards;
+}
+
+@keyframes titleAnime {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(-6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(-2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(1.2deg);
+	}
+}
+
+.anime1{
+
+	animation: objectsInScreen 1s ease-in;
+
+}
+
+.anime2{
+
+	animation: objectsInScreen 1.5s ease-in;
+
+}
+.anime3{
+
+	animation: objectsInScreen 2s ease-out;
+
+}
+.anime4{
+
+	animation: popupObjects 2.5s ease-out;
+
+}
+
+@keyframes objectsInScreen {
+    0% {
+		transform: translateX(-100vw);
+        opacity: 0;
+    }
+
+    100% {
+		transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes popupObjects {
+
+	0%{
+		opacity: 0%;
+	}
+	100%{
+		opacity: 100%;
+	}
+	
+}
